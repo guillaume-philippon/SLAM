@@ -15,7 +15,7 @@ urlpatterns = [
 urlpatterns += [
     url(r'^$', slam_views.list_pools, name="list_pools"),
     url(r'^lang/?$', slam_views.lang, name="lang"),
-    url(r'^pool/?$', slam_views.list_pools, "list_pools_2"),
+    url(r'^pool/?$', slam_views.list_pools, name="list_pools_2"),
     url(r'^addpool/?$', slam_views.add_pool, name="add_pool"),
     url(r'^pool/([^/]+)/map/?$', slam_views.pool_map, name="pool_map"),
     url(r'^pool/([^/]+)/?$', slam_views.pool_info, name="pool_info"),
